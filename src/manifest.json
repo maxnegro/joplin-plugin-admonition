@@ -1,0 +1,12 @@
+{
+	"manifest_version": 1,
+	"id": "joplin-plugin-custom-containers",
+	"app_min_version": "1.8",
+	"version": "1.0.0",
+	"name": "Custom containers",
+	"description": "Custom containers",
+	"author": "Massimiliano Masserelli",
+	"homepage_url": "https://github.com/maxnegro/joplin-plugin-custom-containers",
+	"repository_url": "https://github.com/maxnegro/joplin-plugin-custom-containers",
+	"keywords": []
+}
