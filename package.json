@@ -28,6 +28,6 @@
   "dependencies": {
     "@types/markdown-it": "^10.0.3",
     "markdown-it": "^12.0.2",
-    "markdown-it-container": "^3.0.0"
+    "markdown-it-admonition": "^1.0.4"
   }
 }

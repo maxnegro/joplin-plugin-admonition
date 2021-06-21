@@ -4,12 +4,15 @@ import { ContentScriptType } from 'api/types';
 
 joplin.plugins.register({
 	onStart: async function() {
-		console.info('Hello world. Custom containers plugin started!');
 		// Here we register new Markdown plugin
 		await joplin.contentScripts.register(
 			ContentScriptType.MarkdownItPlugin,
-			'Custom containers',
-			'./custom-containers.js'
+			'admonition',
+			'./markdownItAdmonition.js'
 		);
+		// console.log("my object: %o", joplin.contentScripts);
+		// var plugObj = require('markdown-it-container');
+		// console.log("my object %o", plugObj);
+		// console.info('Hello world. Custom containers plugin started!!!');
 	},
 });
