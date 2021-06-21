@@ -2,7 +2,7 @@
 	"manifest_version": 1,
 	"id": "org.joplinapp.plugins.admonition",
 	"app_min_version": "1.8",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "Custom containers",
 	"description": "Admonition markdown plugin",
 	"author": "Massimiliano Masserelli",

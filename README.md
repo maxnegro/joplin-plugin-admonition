@@ -31,17 +31,17 @@ Block is rendered in a single *DIV*, as follows:
 
 The following admonition types, supported by Docarys, are recognized by this plugin:
 
-|Type
----
-|note
-|abstract
-|info
-|tip
-|success
-|question
-|warning
-|failure
-|danger
-|bug
-|example
-|quote
+|Type|
+|---|
+|note|
+|abstract|
+|info|
+|tip|
+|success|
+|question|
+|warning|
+|failure|
+|danger|
+|bug|
+|example|
+|quote|
