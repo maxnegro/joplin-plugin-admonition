@@ -1,6 +1,6 @@
 {
 	"manifest_version": 1,
-	"id": "org.joplinapp.plugins.CustomContainers",
+	"id": "org.joplinapp.plugins.admonition",
 	"app_min_version": "1.8",
 	"version": "1.0.0",
 	"name": "Custom containers",
