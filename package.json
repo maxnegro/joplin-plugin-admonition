@@ -1,7 +1,7 @@
 {
-  "name": "joplin-plugin-custom-containers",
+  "name": "joplin-plugin-admonition",
   "version": "1.0.0",
-  "description": "Plugin for markdown custom containers.",
+  "description": "Plugin for markdown admonitions.",
   "scripts": {
     "dist": "webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
     "prepare": "npm run dist",
