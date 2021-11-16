@@ -1,5 +1,5 @@
 .admonition {
-  background-color: white;
+  background-color: transparent;
   border-left: .2rem solid #448aff;
   border-radius: .1rem;
   box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 5%), 0 0.025rem 0.05rem rgb(0 0 0 / 5%);
