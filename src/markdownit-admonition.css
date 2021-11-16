@@ -113,3 +113,53 @@
 .quote .admonition-title {
   background-color: hsla(0,0%,62%,.1);
 }
+
+/* Admonition title icons */
+
+.note .admonition-title::before {
+	content: "🖋 ";
+}
+
+.abstract .admonition-title::before {
+  content: "≣ ";
+}
+
+.info .admonition-title::before {
+	content: "ℹ️ ";
+}
+
+.tip .admonition-title::before {
+	content: "🔥 ";
+}
+
+.success .admonition-title::before {
+	content: "✅ ";
+}
+
+.question .admonition-title::before {
+	content: "❓ ";
+}
+
+.warning .admonition-title::before {
+	content: "⚠️ ";
+}
+
+.failure .admonition-title::before {
+	content: "❌ ";
+}
+
+.danger .admonition-title::before {
+	content: "⚡️ ";
+}
+
+.bug .admonition-title::before {
+	content: "🕷 ";
+}
+
+.example .admonition-title::before {
+	content: "☞ ";
+}
+
+.quote .admonition-title::before {
+	content: "❞ ";
+}
