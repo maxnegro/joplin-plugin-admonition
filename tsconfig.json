@@ -2,9 +2,14 @@
 	"compilerOptions": {
 		"outDir": "./dist/",
 		"module": "commonjs",
+		"moduleResolution": "node",
 		"target": "es2015",
 		"jsx": "react",
 		"allowJs": true,
-		"baseUrl": "."
+		"baseUrl": ".",
+		"paths": {
+			"api": ["api"],
+			"api/*": ["api/*"]
+		}
 	}
 }

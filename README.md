@@ -57,3 +57,5 @@ If you prefer not to rely on local global npm tools, you can run install/update/
 ```
 
 The repository is mounted inside the container, so generated files are written directly to this project directory.
+
+Note: the Joplin generator may overwrite scripts in package.json during updates. For this reason, `./tools/docker-run.sh npm run update` is intentionally hardened and internally uses an `npx yo+generator-joplin` command without global installs.

@@ -1,28 +1,29 @@
 {
   "name": "joplin-plugin-admonition",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Plugin for markdown admonitions.",
   "scripts": {
-    "dist": "JOPLIN_PLUGIN_CONFIG=buildMain webpack && JOPLIN_PLUGIN_CONFIG=buildExtraScripts webpack && JOPLIN_PLUGIN_CONFIG=createArchive webpack",
+    "dist": "webpack --env joplin-plugin-config=buildMain && webpack --env joplin-plugin-config=buildExtraScripts && webpack --env joplin-plugin-config=createArchive",
     "prepare": "npm run dist",
-    "update": "npx -y -p yo -p generator-joplin yo joplin --update"
+    "update": "npx -y -p yo -p generator-joplin yo joplin --node-package-manager npm --update --force",
+    "updateVersion": "webpack --env joplin-plugin-config=updateVersion"
   },
   "license": "MIT",
   "keywords": [
     "joplin-plugin"
   ],
   "devDependencies": {
-    "@types/node": "^14.0.14",
+    "@types/node": "^18.7.13",
     "chalk": "^4.1.0",
-    "copy-webpack-plugin": "^6.1.0",
-    "fs-extra": "^9.0.1",
-    "glob": "^7.1.6",
+    "copy-webpack-plugin": "^11.0.0",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
     "on-build-webpack": "^0.1.0",
-    "tar": "^6.0.5",
-    "ts-loader": "^7.0.5",
-    "typescript": "^3.9.3",
-    "webpack": "^5.102.1",
-    "webpack-cli": "^6.0.1",
+    "tar": "^6.1.11",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
     "yargs": "^16.2.0"
   },
   "dependencies": {
@@ -30,5 +31,8 @@
     "generator-joplin": "^3.5.1",
     "markdown-it": "^12.0.2",
     "markdown-it-admonition": "^1.0.4"
-  }
+  },
+  "files": [
+    "publish"
+  ]
 }

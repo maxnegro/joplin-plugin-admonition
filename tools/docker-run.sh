@@ -15,6 +15,15 @@ if ! command -v docker >/dev/null 2>&1; then
 	exit 1
 fi
 
+# Keep update workflow stable even if yo overwrites package.json scripts.
+if [[ "$1" == "npm" && "${2:-}" == "run" && "${3:-}" == "update" ]]; then
+	shift 3
+	if [[ "${1:-}" == "--" ]]; then
+		shift
+	fi
+	set -- npx -y -p yo -p generator-joplin yo joplin --node-package-manager npm --update --force "$@"
+fi
+
 docker build -t "$IMAGE_NAME" -f "$ROOT_DIR/Dockerfile.dev" "$ROOT_DIR" >/dev/null
 
 docker run --rm -it \
