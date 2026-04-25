@@ -1,0 +1,10 @@
+FROM node:20-bookworm-slim
+
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends git python3 make g++ \
+	&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+
+# Cache npm downloads across runs when the caller mounts a cache volume/dir.
+ENV npm_config_cache=/workspace/.npm-cache

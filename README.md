@@ -45,3 +45,15 @@ The following admonition types, supported by Docarys, are recognized by this plu
 |bug|
 |example|
 |quote|
+
+## Development (containerized)
+
+If you prefer not to rely on local global npm tools, you can run install/update/build in Docker.
+
+```bash
+./tools/docker-run.sh npm ci
+./tools/docker-run.sh npm run update
+./tools/docker-run.sh npm run dist
+```
+
+The repository is mounted inside the container, so generated files are written directly to this project directory.

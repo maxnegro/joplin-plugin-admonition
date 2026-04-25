@@ -1,11 +1,11 @@
 {
   "name": "joplin-plugin-admonition",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Plugin for markdown admonitions.",
   "scripts": {
-    "dist": "webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
+    "dist": "JOPLIN_PLUGIN_CONFIG=buildMain webpack && JOPLIN_PLUGIN_CONFIG=buildExtraScripts webpack && JOPLIN_PLUGIN_CONFIG=createArchive webpack",
     "prepare": "npm run dist",
-    "update": "npm install -g generator-joplin && yo joplin --update"
+    "update": "npx -y -p yo -p generator-joplin yo joplin --update"
   },
   "license": "MIT",
   "keywords": [
@@ -21,12 +21,13 @@
     "tar": "^6.0.5",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.3",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
     "yargs": "^16.2.0"
   },
   "dependencies": {
-    "@types/markdown-it": "^10.0.3",
+    "@types/markdown-it": "^14.1.2",
+    "generator-joplin": "^3.5.1",
     "markdown-it": "^12.0.2",
     "markdown-it-admonition": "^1.0.4"
   }
